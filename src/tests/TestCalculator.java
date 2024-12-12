@@ -46,7 +46,7 @@ public class TestCalculator {
         assertEquals(calculator.displayNumber(),7.05,.001);
     }
     @Test
-    public void testDivFunctions()
+    public void testDivState()
     {
         Calculator calculator = new Calculator();
         assertEquals(calculator.displayNumber(), 0.0, .001);
@@ -58,7 +58,7 @@ public class TestCalculator {
         assertEquals(calculator.displayNumber(), 0.4, .001);
     }
     @Test
-    public void testSubFunctions()
+    public void testSubState()
     {
         Calculator calculator = new Calculator();
         assertEquals(calculator.displayNumber(), 0.0, .001);
@@ -70,29 +70,31 @@ public class TestCalculator {
         assertEquals(calculator.displayNumber(), 5.0, .001);
     }
     @Test
-    public void testMultFunctions()
+    public void testMultState()
     {
         Calculator calculator = new Calculator();
         assertEquals(calculator.displayNumber(), 0.0, .001);
         calculator.numberPressed(10);
-        calculator.dividePressed();
+        calculator.multiplyPressed();
         calculator.numberPressed(5);
         calculator.equalsPressed();
         calculator.equalsPressed();
-        assertEquals(calculator.displayNumber(), 7.0, .001);
+        assertEquals(calculator.displayNumber(), 250.0, .001);
     }
     @Test
-    public void testAddFunctions()
+    public void testAddState()
     {
         Calculator calculator = new Calculator();
         assertEquals(calculator.displayNumber(), 0.0, .001);
         calculator.numberPressed(10);
-        calculator.dividePressed();
+        calculator.addPressed();
         calculator.numberPressed(5);
         calculator.equalsPressed();
         calculator.equalsPressed();
-        assertEquals(calculator.displayNumber(), 7.0, .001);
+        assertEquals(calculator.displayNumber(), 20.0, .001);
     }
+
+
     @Test
     public void testCalculatorClear()
     {
