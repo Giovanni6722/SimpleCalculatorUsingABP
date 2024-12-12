@@ -1,17 +1,19 @@
-A simple calculator using Automata-Based Programming (ABP), no conditionals or control flow are ever present in
-this project!
+A simple calculator using Automata-Based Programming (ABP), no conditionals or control flow are
+ever present in this project!
 
-ABP is a programming practice in which a program is thought of as a Finite-State Machine(FSM) or another automiton.
+ABP is a programming practice in which a program is thought of as a Finite-State Machine(FSM) or
+another automiton.
 
 This simple calculator is a specific edge case in ABP, known as a "Finite-State Machine Program",
 this project more closley features The State Pattern, which is a crutial aspect of ABP
 
-The State Pattern is a behavioral software design pattern that allows objects to alter their own behavior upon
-an internal change.
+The State Pattern is a behavioral software design pattern that allows objects to alter their own
+behavior upon an internal change.
 
-Disclaimer: I am a Teaching Assistant at UB, This project was done as a final assignment for my CSE116 class,
-this is being uploaded to my github because I have added extra functionability, and am using this for an educational
-presentation. If any UB student were to come across this project and use it without consent, you will be caught by UB's
-anti cheat, (As a TA, I have used it before, it is a very good anti cheat) and you will receive an automatic F in CSE116.
+Disclaimer: I am a Teaching Assistant at UB, This project was done as a final assignment for my
+CSE116 class, this is being uploaded to my github because I have added extra functionability,
+and am using this for an educational presentation. If any UB student were to come across this
+project and use it without consent, you will be caught by UB's anti cheat, (As a TA, I have used
+it before, it is a very good anti cheat) and you will receive an automatic F in CSE116.
 
 You have been warned.
