@@ -49,7 +49,7 @@ public class DivideStateRepeat implements State {
     @Override
     public void equalsPressed()
     {
-        calculator.setCurrentNumber(calculator.getRepeatNumber() / calculator.getCurrentNumber());
+        calculator.setCurrentNumber(calculator.getCurrentNumber() / calculator.getRepeatNumber());
     }
     @Override
     public void decimalPressed()

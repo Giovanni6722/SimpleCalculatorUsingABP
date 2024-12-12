@@ -55,7 +55,7 @@ public class DivideState implements State {
     public void equalsPressed() {
         calculator.setRepeatNumber(calculator.getCurrentNumber());
         calculator.setCurrentNumber(calculator.getStoredNumber() / calculator.getCurrentNumber());
-        calculator.setState(new AddStateRepeat(calculator));
+        calculator.setState(new DivideStateRepeat(calculator));
     }
 
     @Override
