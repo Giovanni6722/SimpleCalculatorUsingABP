@@ -94,7 +94,77 @@ public class TestCalculator {
         assertEquals(calculator.displayNumber(), 20.0, .001);
     }
 
+    @Test
+    public void testAddDecimalState()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(calculator.displayNumber(), 0.0, .001);
+        calculator.numberPressed(5);
+        calculator.decimalPressed();
+        calculator.numberPressed(2);
+        calculator.addPressed();
+        calculator.numberPressed(2);
+        calculator.decimalPressed();
+        calculator.numberPressed(1);
+        calculator.equalsPressed();
+        assertEquals(calculator.displayNumber(), 7.3, .001);
+        calculator.equalsPressed();
+        assertEquals(calculator.displayNumber(), 9.4, .001);
+    }
 
+    @Test
+    public void testSubDecimalState()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(calculator.displayNumber(), 0.0, .001);
+        calculator.numberPressed(5);
+        calculator.decimalPressed();
+        calculator.numberPressed(2);
+        calculator.subtractPressed();
+        calculator.numberPressed(2);
+        calculator.decimalPressed();
+        calculator.numberPressed(1);
+        calculator.equalsPressed();
+        assertEquals(calculator.displayNumber(), 3.1, .001);
+        calculator.equalsPressed();
+        assertEquals(calculator.displayNumber(), 1.0, .001);
+    }
+
+    @Test
+    public void testMultDecimalState()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(calculator.displayNumber(), 0.0, .001);
+        calculator.numberPressed(5);
+        calculator.decimalPressed();
+        calculator.numberPressed(2);
+        calculator.multiplyPressed();
+        calculator.numberPressed(2);
+        calculator.decimalPressed();
+        calculator.numberPressed(1);
+        calculator.equalsPressed();
+        assertEquals(calculator.displayNumber(), 10.92, .001);
+        calculator.equalsPressed();
+        assertEquals(calculator.displayNumber(), 22.932, .001);
+    }
+
+    @Test
+    public void testDivDecimalState()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(calculator.displayNumber(), 0.0, .001);
+        calculator.numberPressed(5);
+        calculator.decimalPressed();
+        calculator.numberPressed(2);
+        calculator.dividePressed();
+        calculator.numberPressed(2);
+        calculator.decimalPressed();
+        calculator.numberPressed(1);
+        calculator.equalsPressed();
+        assertEquals(calculator.displayNumber(), 2.4761904761904763, .001);
+        calculator.equalsPressed();
+        assertEquals(calculator.displayNumber(), 1.1791383219954648, .001);
+    }
     @Test
     public void testCalculatorClear()
     {
