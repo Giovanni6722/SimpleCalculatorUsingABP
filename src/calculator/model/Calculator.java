@@ -15,12 +15,12 @@ public class Calculator
         repeatNumber = 0.0;
         decimalNumberCount = 1;
     }
-    public void setState(/*???*/) {/*???*/}
+    public void setState(State state) {this.currentState = state;}
     public void setCurrentNumber(double number) {this.currentNumber = number;}
     public void setStoredNumber(double number) {this.storedNumber = number;}
     public void setDecimalNumberCount(int decimalNumberCount) {this.decimalNumberCount = decimalNumberCount;}
     public void setRepeatNumber(double repeatNumber) {this.repeatNumber = repeatNumber;}
-    public /*???*/ getState() {/*???*/}
+    public State getState() {return this.currentState;}
     public double getCurrentNumber() {return currentNumber;}
     public double getStoredNumber() {return storedNumber;}
     public int getDecimalNumberCount() {return decimalNumberCount;}
