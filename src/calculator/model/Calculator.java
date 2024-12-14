@@ -20,7 +20,6 @@ public class Calculator
     public void setStoredNumber(double number) {this.storedNumber = number;}
     public void setDecimalNumberCount(int decimalNumberCount) {this.decimalNumberCount = decimalNumberCount;}
     public void setRepeatNumber(double repeatNumber) {this.repeatNumber = repeatNumber;}
-    public State getState() {return this.currentState;}
     public double getCurrentNumber() {return currentNumber;}
     public double getStoredNumber() {return storedNumber;}
     public int getDecimalNumberCount() {return decimalNumberCount;}
